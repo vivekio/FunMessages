@@ -8,6 +8,7 @@ const connection: ConnectionObject = {};
 
 export async function dbConnect() {
     if (connection.isConnected) {
+        console.log("MongoDB is already connected");
         return;
     }
     try {
